@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World from main branch '
+                echo 'Hello World from jnk_br001 branch '
             }
         }
     }
