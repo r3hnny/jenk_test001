@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Hello Branch') {
             when {
-                branch 'main'
+                branch 'jnktest-01'
             }
             steps {
                 echo 'Hello jnktest-01'
