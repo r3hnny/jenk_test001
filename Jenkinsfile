@@ -3,10 +3,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Hello All') {
             steps {
-                echo 'Hello World from jenk_test001 branch'
+                echo 'Hello World'
             }
+        stage('Hello Branch') {
+            when {
+                branch main
+            }
+            steps {
+                echo 'Hello jnktest-01'
+            }            
         }
     }
 }
